@@ -1,0 +1,23 @@
+body {
+	color: #fff;
+}
+
+h1 {
+	color: #999;
+}
+
+h2 {
+	color: #DDD;
+}
+#main {
+	margin-top: 30px;
+}
+
+#top {
+	background-color: #222;
+}
+#content {
+	position: relative;
+	bottom: 18px;
+	background-color: #AAA;
+}
