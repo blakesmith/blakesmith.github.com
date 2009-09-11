@@ -3,11 +3,13 @@ layout: default
 title: dreaming, living, breathing in code.
 ---
 
-Hi. I'm Blake Smith. I write software. I do it for fun, because writing cool stuff is awesome.
-  <ul class="posts">
-    {% for post in site.posts %}
-      <li><span>
-	{{ post.date | date_to_string }}
-</span> &raquo; <a href="{{site.url}}{{ post.url }}">{{ post.title }}</a></li>
-    {% endfor %}
-  </ul>
+Hi. I'm Blake Smith. I write software. I like working on cool stuff. A list of projects I've worked on is under the code section on the right.
+<br style="margin-bottom: 10px;"/>
+<h3>blog posts</h3>
+<ul class="posts">
+  {% for post in site.posts %}
+    <li><span>
+      {{ post.date | date_to_string }}
+      </span> &raquo; <a href="{{site.url}}{{ post.url }}">{{ post.title }}</a></li>
+  {% endfor %}
+</ul>
