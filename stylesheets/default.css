@@ -19,13 +19,14 @@ h2 {
 }
 #content {
 	position: relative;
-	bottom: 18px;
+	bottom: 8px;
 	font-family:helvetica,arial,clean,sans-serif;
 }
 
 #content_body {
 	background-color: #DDD;
 	padding-bottom: 20px;
+	padding-top: 40px;
 }
 
 #menu {
