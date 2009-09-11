@@ -1,5 +1,6 @@
 body {
-	color: #fff;
+	color: #222;
+	background-color: #AAA;
 }
 
 h1 {
@@ -19,5 +20,23 @@ h2 {
 #content {
 	position: relative;
 	bottom: 18px;
+	font-family:helvetica,arial,clean,sans-serif;
+}
+
+#content_body {
+	background-color: #DDD;
+	padding-bottom: 20px;
+}
+
+#menu {
+	background-color: #BBB;
+	position: relative;
+	top: 0;
+}
+
+#menu li {
+}
+
+#menu li:hover {
 	background-color: #AAA;
 }

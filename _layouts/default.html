@@ -21,8 +21,19 @@
 			<h2 class="prepend-1">{{ site.subtitle }}</h2>
 		</div>
 		<div id="content">
-			<h3 class="prepend-1">{{ page.title }}</h3>
-			<div id="body" class="prepend-1">{{ content }}</div>
+			<div id="content_body" class="prepend-1 span-19">
+				<h3>{{ page.title }}</h3>
+				{{ content }}
+			</div>
+			<div id="menu" class="append-1 span-3 last">
+				menu
+				<ul id="menu_ul">
+					<li><a href="#">1</a></li>
+					<li><a href="#">2</a></li>
+					<li><a href="#">3</a></li>
+					<li><a href="#">4</a></li>
+				</ul>
+			</div>
 		</div>
 	</div>
 </body>
