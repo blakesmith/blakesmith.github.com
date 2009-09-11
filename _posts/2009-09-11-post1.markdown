@@ -1,0 +1,11 @@
+---
+layout: post
+title: the first one
+---
+My first post!
+
+{% highlight ruby %}
+def foo
+  puts 'foo'
+end
+{% endhighlight %}

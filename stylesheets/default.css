@@ -1,3 +1,7 @@
+---
+stylesheet: default.css
+---
+
 body {
 	color: #222;
 	background-color: #AAA;
@@ -9,6 +13,11 @@ h1 {
 
 h2 {
 	color: #DDD;
+}
+
+pre {
+	background-color: #EEE;
+	border: 1px dotted #BBB;
 }
 #main {
 	margin-top: 30px;
@@ -39,10 +48,19 @@ h2 {
 	list-style-type: none;
 }
 #menu li {
-	background-image: url('images/arrow.gif');
+	background-image: url('{{ site.url }}/images/arrow.gif');
 	background-repeat: no-repeat;
+	background-position: 0 7px;
+	padding-left: 10px;
 }
 
 #menu li:hover {
 	background-color: #AAA;
+}
+
+.date {
+	font-size: 9px;
+	font-family: Monaco,"Courier New",monospace;
+	color: #666;
+	margin-bottom: 10px;
 }
