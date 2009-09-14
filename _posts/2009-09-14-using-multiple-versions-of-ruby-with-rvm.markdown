@@ -4,7 +4,7 @@ title: using multiple versions of ruby with rvm
 published: true
 ---
 
-As the Ruby community begins to transition to Ruby 1.9 as the standard, there are some things that I needed to address. This weekend, [Arch Linux](http://archlinux.org) migrated to ruby version 1.9 in the upstream repositories. I'm a big fan of running bleeding edge software releases, so Arch works well... I would have hoped that the upgrade to 1.9 would be seamless, but there are a few issues that would compel you to want to run multiple versions of Ruby happily on the same machine, namely: 
+As the Ruby community begins to transition to Ruby 1.9 as the standard, there are some things that I needed to address. This weekend, [Arch Linux](http://archlinux.org) migrated to ruby version 1.9 in the upstream repositories. I'm a big fan of running bleeding edge software releases, so Arch works well... I would have hoped that the upgrade to 1.9 would be seamless, but there are a few issues that would compel me to run multiple versions of Ruby happily on the same machine, namely: 
 
 - Not all gems and plugins have updated to be compatible with 1.9
 - Older projects that will not be upgrading to the latest release are still required
@@ -127,6 +127,6 @@ Just like magic!
 
 ### working with gems
 
-You'll have to install all the gems you need for each version you plan to run. You can do this like you would in a system ruby install, but DON'T USE SUDO. Remember that the versions of ruby you installed are stored in your home director, so you want to make sure they are written with normal user priveleges.I noted that there is a feature 'gemdup' which is supposed to let you copy over gems from one install to another, but I couldn't get it to work correctly (it is marked as experimental, so I'll give that some time to mature). I could not get 'gemdir' to succesfully switch the gem directory either, but this isn't that big of a deal.
+You'll have to install all the gems you need for each version you plan to run. You can do this like you would in a system ruby install, but DON'T USE SUDO. Remember that the versions of ruby you installed are stored in your home directory, so you want to make sure they are written with normal user priveleges. I noted that there is a feature 'gemdup' which is supposed to let you copy over gems from one install to another, but I couldn't get it to work correctly (it is marked as experimental, so I'll give that some time to mature). I could not get 'gemdir' to succesfully switch the gem directory either, but this isn't that big of a deal.
 
 Overall I'm really pleased with rvm. Now I can cut ruby gems like a pro. :-)
