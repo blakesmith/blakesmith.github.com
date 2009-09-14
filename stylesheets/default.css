@@ -1,7 +1,3 @@
----
-stylesheet: default.css
----
-
 body {
 	color: #222;
 	background-color: #AAA;
@@ -52,7 +48,7 @@ pre {
 	list-style-type: none;
 }
 #menu li {
-	background-image: url('{{ site.url }}/images/arrow.gif');
+	background-image: url('/images/arrow.gif');
 	background-repeat: no-repeat;
 	background-position: 0 7px;
 	padding-left: 10px;
