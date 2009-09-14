@@ -1,5 +1,6 @@
 pygments:       true
 lsi:            true
-url:            http://localhost/blakesmith/_site
+# url:            http://localhost/blakesmith/_site
+url:            http://blakesmith.github.com
 title:          $ grep blake code
 subtitle:       code by blake smith
