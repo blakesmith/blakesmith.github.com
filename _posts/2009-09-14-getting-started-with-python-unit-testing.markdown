@@ -13,11 +13,11 @@ In this example, I have the following file structure:
 
 
 <pre>
-core
+core/
     -> parser.py
-test
+test/
     -> suite.py
-    -> test_core
+    -> test_core/
         -> parser_test.py
 </pre>
 
@@ -45,7 +45,7 @@ Here's what we expect to happen:
 
 This expectation can easily be translated into a test. Here's the corresponding test for our expectations:
 
-test/test_core/parser_test.py
+test/test\_core/parser\_test.py
 {% highlight python %}
 import unittest
 import sys
