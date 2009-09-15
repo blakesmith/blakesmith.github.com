@@ -22,7 +22,7 @@ As compared to something similar in Django:
 from django.shortcuts import render_to_response
 from blog.models import Post
 
-def index(request, id):
+def index(request):
     post_details = Post.objects.filter(published=True)
     return render_to_response("blog/post_details.html", {'post_details': post_details})
 
