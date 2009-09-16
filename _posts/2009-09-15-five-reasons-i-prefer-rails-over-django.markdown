@@ -50,7 +50,7 @@ This rocks my socks. Being able to go both directions is brilliant. Migrations a
 
 ### 3. erb in the view
 
-Again, this is a difference in philosophy. Django says that templates should be easy for designers to read and understand, and to this I would agree. However, the annoyance comes when I as a developer work on the view template. I have to remember 2 ways to do iteration, (One in Python, one in the Django Templating language). I have to remember all sorts of stuff about filters and tags... It's just a lot to get comftorable with quickly. Having to learn two ways of doing it makes it harder for quick adoption. If you're new to Python AND Django, you're going to be working quite a bit harder to get comftorable. Rails uses ERB or embedded ruby. The same flow control syntax I use in my models and controllers, I can also use in my views. 'But what about designers?' you might ask. I would tell you that ruby is easy enough to read (sometimes easier) than Python: I think Ruby reads closer to printed prose than Python does, thus making it more accussible to non-developers.
+Again, this is a difference in philosophy. Django says that templates should be easy for designers to read and understand, and to this I would agree. However, the annoyance comes when I as a developer work on the view template. I have to remember 2 ways to do iteration, (One in Python, one in the Django Templating language). I have to remember all sorts of stuff about filters and tags... It's just a lot to get comfortable with quickly. Having to learn two ways of doing it makes it harder for quick adoption. If you're new to Python AND Django, you're going to be working quite a bit harder to get comfortable. Rails uses ERB, or embedded Ruby. The same flow control syntax I use in my models and controllers, I can also use in my views. 'But what about designers?' you might ask. I would tell you that ruby is easy enough to read (sometimes easier) than Python: I think Ruby reads closer to printed prose than Python does, thus making it more accussible to non-developers.
 
 The only disadvantage about using ERB in the views, is you have to be careful about how much business logic they contain (There shouldn't be any). Make sure to only put presentation logic in the view, and you'll be much more satisfied in the long-term.
 
@@ -66,6 +66,8 @@ posts.each { |post| puts post[:title] if post[:published] }
 {% endhighlight %}
 
 I read this as: For each post, print the title if it's published.
+
+The same thing in Python:
 
 {% highlight python %}
 posts = [{'title': 'Why the Swedish Chef is Awesome', 'published': True},
@@ -89,4 +91,4 @@ The sheer quantity of problems that have been modularly solved using plugins and
 
 ### wrapup
 
-I'm a big believer in using the right tool for the right job. If you're trying to fit a square shape into a round hole you're doing something wrong. Rails cannot solve all your web development problems. Some may be better solved with Python (perhaps if I wanted to do something that involved the awesome [twisted](http://twistedmatrix.com) library). But for general enjoyment and productivity, give me Rails anyday.
+I'm a big believer in using the right tool for the right job. If you're trying to fit a square shape into a round hole you're doing something wrong. Rails cannot solve all your web development problems. Some may be better solved with Python (perhaps if we wanted to do something that involved the awesome [twisted](http://twistedmatrix.com) library). But for general enjoyment and productivity, give me Rails anyday.
