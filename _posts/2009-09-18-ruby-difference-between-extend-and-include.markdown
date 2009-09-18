@@ -10,7 +10,7 @@ I know this one has been done many times before, but I felt some further elabora
 
 ### high level
 
-As a general rule of thumb, you use extend for class level methods, and include for instance level methods. This isn't always the case, as we'll see in a later example. For now, let's just assume this to be the case. Here's an example that demonstrates this:
+As a general rule of thumb, you use extend for class level methods, and include for instance level methods. This isn't always the case, as we'll see in a later example. For now, let's just assume this to be the true. Here's an example that demonstrates this:
 
 {% highlight ruby %}
 
@@ -78,7 +78,7 @@ This acheives the same effect as the first example, but with a more simple inter
 
 ### extending existing objects
 
-If you have an existing object, whether it be a class or an instance of a class you can use the use the extend method to mixin a module's methods at the class or instance levels. This sounds confusing and contradictory to what I just told you, but I think an example will help clarify:
+If you have an existing object, whether it be a class or an instance of a class you can use the extend method to mixin a module's methods at the class or instance levels. This sounds confusing and contradictory to what I just told you, but I think an example will help clarify:
 
 {% highlight ruby %}
 
