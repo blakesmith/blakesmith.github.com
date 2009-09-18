@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "git: migrating a directory into a new repository with history"
-published: true
+published: false
 ---
 
 I had a problem. I started a new project in git with a very broadly defined scope. As I started hacking along, I realized that some of the components of my project should probably be pulled out into their own seperate library. With this came the problem:
