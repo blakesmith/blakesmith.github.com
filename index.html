@@ -7,9 +7,21 @@ Hi. I'm Blake Smith. I write software. I like working on cool stuff. I love free
 <br style="margin-bottom: 10px;"/>
 <h3>stray thoughts</h3>
 <ul class="posts">
-  {% for post in site.posts %}
+  {% for post in paginator.posts %}
     <li><span>
       {{ post.date | date_to_string }}
       </span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
   {% endfor %}
 </ul>
+
+
+<!-- Pagination -->
+{% if paginator.previous_page == 1 %}
+	<a href="/">&laquo; fresh thoughts</a>
+{% endif %}
+{% if paginator.previous_page > 1 %}
+	<a href="/page{{ paginator.previous_page }}">&laquo; fresh thoughts</a>
+{% endif %}
+{% if paginator.next_page < paginator.total_pages %}
+	<a href="/page{{ paginator.next_page }}">stale thoughts &raquo;</a>
+{% endif %}

@@ -4,3 +4,4 @@ lsi:            true
 url:            http://blakesmith.github.com
 title:          $ grep code blake
 subtitle:       code by blake smith
+paginate: 5
