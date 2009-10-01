@@ -77,3 +77,9 @@ pre {
 	position: relative;
 	bottom: 15px;
 }
+.big-title {
+	font-size: 26px;
+	font-weight: bold;
+	margin-bottom: 5px;
+	margin-top: 5px;
+}
