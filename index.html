@@ -3,12 +3,14 @@ layout: default
 title: dreaming, living, breathing in code.
 ---
 
-Hi. I'm Blake Smith. I write software. I like working on cool stuff. I love free and open source software. Code is art, code is beautiful.
+<span class="weak bottom-offset">Code is art, code is beautiful...</span>
+<br />
+Hi. I'm Blake Smith. I write software. I'm a free and open source software advocate.
 <br style="margin-bottom: 10px;"/>
 <h3>stray thoughts</h3>
 <ul class="posts">
   {% for post in paginator.posts %}
-    <li><span>
+    <li><span class="weak">
       {{ post.date | date_to_string }}
       </span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
   {% endfor %}
@@ -17,11 +19,11 @@ Hi. I'm Blake Smith. I write software. I like working on cool stuff. I love free
 
 <!-- Pagination -->
 {% if paginator.previous_page == 1 %}
-	<a href="/">&laquo; fresh thoughts</a>
+	<a class="semi-weak" href="/">&laquo; fresh thoughts</a>
 {% endif %}
 {% if paginator.previous_page > 1 %}
-	<a href="/page{{ paginator.previous_page }}">&laquo; fresh thoughts</a>
+	<a class="semi-weak" href="/page{{ paginator.previous_page }}">&laquo; fresh thoughts</a>
 {% endif %}
 {% if paginator.next_page <= paginator.total_pages %}
-	<a href="/page{{ paginator.next_page }}">stale thoughts &raquo;</a>
+	<a class="semi-weak" href="/page{{ paginator.next_page }}">stale thoughts &raquo;</a>
 {% endif %}

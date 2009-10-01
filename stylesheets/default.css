@@ -61,6 +61,19 @@ pre {
 .date {
 	font-size: 9px;
 	font-family: Monaco,"Courier New",monospace;
-	color: #666;
+	color: #667;
 	margin-bottom: 10px;
+}
+
+.weak {
+	color: #666;
+}
+
+.semi-weak {
+	color: #444;
+}
+
+.bottom-offset {
+	position: relative;
+	bottom: 15px;
 }
