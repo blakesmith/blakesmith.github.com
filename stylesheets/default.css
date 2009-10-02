@@ -108,6 +108,8 @@ a {
 	text-align: center;
 	background-color: #EEE;
 	margin-top: 10px;
+	padding-bottom: 5px;
+	padding-top: 5px;
 }
 
 .call-to-action ul {
