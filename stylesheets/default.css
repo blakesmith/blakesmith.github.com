@@ -58,6 +58,10 @@ pre {
 	background-color: #AAA;
 }
 
+#menu li a {
+	display: block;
+}
+
 .date {
 	font-size: 9px;
 	font-family: Monaco,"Courier New",monospace;
