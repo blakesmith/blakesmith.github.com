@@ -19,6 +19,10 @@ pre {
 	background-color: #EEE;
 	border: 1px dotted #BBB;
 }
+
+a {
+	text-decoration: none;
+}
 #main {
 	margin-top: 30px;
 }
@@ -52,7 +56,7 @@ pre {
 #menu li {
 	background-image: url('/images/arrow.gif');
 	background-repeat: no-repeat;
-	background-position: 0 7px;
+	background-position: 0 17px;
 	padding-left: 10px;
 }
 
@@ -62,6 +66,9 @@ pre {
 
 #menu li a {
 	display: block;
+	text-decoration: none;
+	font-size: 24px;
+	color: #422;
 }
 
 .date {
