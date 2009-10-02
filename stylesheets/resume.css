@@ -3,7 +3,10 @@
 }
 
 #resume_title {
-	color: #666;
+	color: #000;
 	font-size: 24px;
 }
 
+.resume-header {
+	color: #666;
+}
