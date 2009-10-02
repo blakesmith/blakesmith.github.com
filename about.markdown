@@ -1,9 +1,0 @@
----
-layout: page
-title: about
----
-
-My name is Blake Smith. I love software development. I really like web development with Ruby on Rails and Django. When I have a say in the matter I like to write code in Ruby and Python, but I enjoy studying many different programming languages. I'm a free software advocate, my operating system of choice is Linux. Arch is my distro of choice. Vim is my favorite editor.
-
-I live and work in Chicago, IL USA. I love chess, cycling and reading. You can follow me on [twitter](http://twitter.com/blakesmith).
-
