@@ -26,6 +26,7 @@ pre {
 #top {
 	background-color: #222;
 }
+
 #content {
 	position: relative;
 	bottom: 8px;
@@ -47,6 +48,7 @@ pre {
 #menu ul {
 	list-style-type: none;
 }
+
 #menu li {
 	background-image: url('/images/arrow.gif');
 	background-repeat: no-repeat;
@@ -81,9 +83,37 @@ pre {
 	position: relative;
 	bottom: 15px;
 }
+
 .big-title {
-	font-size: 26px;
+	font-size: 30px;
 	font-weight: bold;
 	margin-bottom: 5px;
 	margin-top: 5px;
+}
+
+.front-image {
+	-moz-transform: rotate(-6deg);
+	-webkit-transform: rotate(-6deg);
+
+}
+
+.call-to-action {
+	text-align: center;
+	background-color: #EEE;
+	margin-top: 10px;
+}
+
+.call-to-action ul {
+	list-style-type: none;
+}
+
+.call-to-action a {
+	text-decoration: none;
+	font-size: 28px;
+	display: block;
+	color: #422;
+}
+
+.call-to-action li:hover {
+	background-color: #DDD;
 }
