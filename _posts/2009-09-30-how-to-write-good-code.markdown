@@ -1,6 +1,6 @@
 ---
 layout: post
-title: how to write good code
+title: "just remember this: how to write good code"
 published: true
 ---
 
