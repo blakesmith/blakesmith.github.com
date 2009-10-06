@@ -30,7 +30,7 @@ big_project/
 
 Through the process of evolution, we've found that 'mylib' is actually quite capable of standing on it's own, and thus we'd like to move it into it's own seperate repository. __WARNING: Make sure you have backups of your repository in case anything goes wrong, some operations listed below are destructive__
 
-### Step 1: Clone existing repository
+### step 1: clone existing repository
 
 cd to the directory with the repository and issue the following command:
 
@@ -40,7 +40,7 @@ $ git clone --no-hardlinks big_project mylib
 
 This will create a copy of the project ommiting filesystem hardlinks. Both big_project and mylib are exactly the same at this point. Now let's do some history modification:
 
-### Step 2: Filter branch the subdirectory
+### step 2: filter branch the subdirectory
 
 cd to the mylib repository copy and issue the follow commands:
 
@@ -55,7 +55,7 @@ The first command will make the 'src/mylib' directory the root of your repositor
 
 Next we need to remove 'src/mylib' out of big_project:
 
-### Step 3: Remove files and history from old repository
+### step 3: remove files and history from old repository
 
 cd back to your original project (big_project) and issue the following command:
 
@@ -65,7 +65,7 @@ git filter-branch --tree-filter "rm -rf src/mylib" --prune-empty HEAD
 
 This will remove the 'src/mylib' directory from big_project.
 
-### End Result
+### end result
 
 You should now have 2 git repositories that look like this:
 
@@ -89,6 +89,6 @@ mylib/
 Each of these repositories will have history that corresponds with the files that are present in the respective repository.
 
 
-### Sources
+### sources
 
 This information was derived from [this StackOverflow question](http://stackoverflow.com/questions/359424/detach-subdirectory-into-separate-git-repository).
