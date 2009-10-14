@@ -42,7 +42,7 @@ paginate: 5
 
 In our case, we want our blog posts to be split with 5 posts per page. Let's look at the code to render the paginated list.
 
-<pre>
+{% highlight html %}
 <ul class="posts">
   {% for post in paginator.posts %}
     <li><span class="weak">
@@ -54,14 +54,16 @@ In our case, we want our blog posts to be split with 5 posts per page. Let's loo
 
 <!-- Pagination -->
 {% if paginator.previous_page == 1 %}
-	<a class="semi-weak" href="/">&laquo; fresh thoughts</a>
+	<a class="semi-weak" href="/">newer posts</a>
 {% endif %}
 {% if paginator.previous_page > 1 %}
-	<a class="semi-weak" href="/page{{ paginator.previous_page }}">&laquo; fresh thoughts</a>
+	<a class="semi-weak" href="/page{{ paginator.previous_page }}">newer posts</a>
 {% endif %}
 {% if paginator.next_page <= paginator.total_pages %}
-	<a class="semi-weak" href="/page{{ paginator.next_page }}">stale thoughts &raquo;</a>
+	<a class="semi-weak" href="/page{{ paginator.next_page }}">older posts</a>
 {% endif %}
-</pre>
+{% endhighlight %}
 
-The top portion of the code 
+The top portion of the code iterates through the array of posts that are present for that page. It prints the date, title and a link to the post. Below that is what handles the pagination links. 
+
+In this example, if we have 13 posts - jekyll will generate index.html, page2/index.html and page3/index.html: All with the appropriate navigation links.
