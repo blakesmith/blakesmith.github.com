@@ -16,7 +16,7 @@ So I took a look at line 15 of malloc.c:
 caddr_t mmalloc_base = NULL;
 {% endhighlight %}
 
-Doing some googling, it seems that caddr_t is an obscure type that can also refer to a void pointer. To fix this so that tf will compile cleanly, download the following patch.
+Doing some googling, it seems that caddr\_t is an obscure type that can also refer to a void pointer. To fix this so that tf will compile cleanly, download the following patch.
 
 [snow_leopard.patch](/files/snow_leopard.patch)
 
