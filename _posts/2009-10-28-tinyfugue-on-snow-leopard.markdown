@@ -18,12 +18,12 @@ caddr_t mmalloc_base = NULL;
 
 Doing some googling, it seems that caddr\_t is an obscure type that can also refer to a void pointer. To fix this so that tf will compile cleanly, download the following patch.
 
-[snow_leopard.patch](/files/snow_leopard.patch)
+[snowleopard.patch](/files/snowleopard.patch)
 
 After untarring the tf tarball, put the patch into the tf directory and apply it with the following:
 
 {% highlight bash %}
-$ patch -p0 < snow_leopard.patch
+$ patch -p0 < snowleopard.patch
 {% endhighlight %}
 
 That should apply the fix to malloc.c. You can then run configure, make and install:
