@@ -12,7 +12,7 @@ malloc.c:15: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'mal
 
 So I took a look at line 15 of malloc.c:
 
-{% highlight C %}
+{% highlight c %}
 caddr_t mmalloc_base = NULL;
 {% endhighlight %}
 
