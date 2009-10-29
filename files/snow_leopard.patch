@@ -1,0 +1,11 @@
+--- src/malloc.orig.c	2009-10-29 03:16:07.000000000 -0500
++++ src/malloc.c	2009-10-29 03:16:18.000000000 -0500
+@@ -12,7 +12,7 @@ static const char RCSid[] = "$Id: malloc
+ #include "signals.h"
+ #include "malloc.h"
+ 
+-caddr_t mmalloc_base = NULL;
++void *mmalloc_base = NULL;
+ int low_memory_warning = 0;
+ static char *reserve = NULL;
+ 
