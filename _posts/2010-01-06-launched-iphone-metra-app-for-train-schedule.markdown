@@ -31,3 +31,5 @@ The web frontend is a Ruby on Rails application combined with IUI for the presen
 The heavy lifting is done by a data and object library I built for the schedule scraping and business logic. I've released the source for this, in hopes that others might find it useful and build something else cool around the metra data. I for one am annoyed at the fact that Metra doesn't expose this data to begin with, so any help I can provide to a future developer to make an application is terrific.
 
 You can find information and the source to the data library on my github [here](http://github.com/blakesmith/metra_schedule). You can also do a 'gem install metra_schedule -s http://gemcutter.org' if you want to start playing with the library immediately.
+
+__UPDATE:__ iPhone Metra will now track delays and service advisories that are posted by Metra so you can check on the status of your train.
