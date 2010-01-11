@@ -71,6 +71,10 @@ a {
 	color: #422;
 }
 
+#post {
+	font-size: 16px;
+}
+
 .date {
 	font-size: 9px;
 	font-family: Monaco,"Courier New",monospace;
