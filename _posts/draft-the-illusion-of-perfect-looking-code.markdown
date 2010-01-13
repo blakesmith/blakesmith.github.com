@@ -1,7 +1,7 @@
 ---
 layout: post
 title: the illusion of perfect looking code
-published: false
+published: true
 ---
 
 Have you ever looked at a beautiful program or software library and thought to yourself, "This is elegant, beautiful, well thought-out and expertly crafted, I wish I could write stuff like that." Because I sure have. I'm going to let you in on a little secret: you _can_ write stuff like this.
