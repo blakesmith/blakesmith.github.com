@@ -1,7 +1,7 @@
 ---
 layout: post
 title: tools that extend your mind
-published: false
+published: true
 ---
 
 A good tool is one that makes you feel like when you use it, it's an extension of your body. When I got into cycling, I was told that a good bike is one that makes you feel like it's fused to your body. When you're riding, you're so deeply connected with the activity and the object that they seem to become one. You feel like your bicycle is just another body part that you are capable of manipulating with the slightest effort of your mind.
