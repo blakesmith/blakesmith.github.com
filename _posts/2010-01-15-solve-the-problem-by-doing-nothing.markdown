@@ -1,7 +1,7 @@
 ---
 title: solve the problem by doing nothing
 layout: post
-published: false
+published: true
 ---
 
 You've hit a road block. You've been banging your head away at the problem for some time and you don't know how you're going to get yourself out of the sticky mess. Fatigue starts to set in as you've been fighting the fire for hours, and this road block refuses to budge. It just stands there in your way, content for you to continue to mash your fingers on the keyboard forever. You keep telling yourself, "This is a computer, it HAS to be logical, why isn't my logical mind able to figure this one out?".
