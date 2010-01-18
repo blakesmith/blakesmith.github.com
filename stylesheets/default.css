@@ -75,6 +75,11 @@ a {
 	font-size: 16px;
 }
 
+#footer {
+	border-top: 1px solid #AAA;
+	margin-top: 30px;
+}
+
 .date {
 	font-size: 9px;
 	font-family: Monaco,"Courier New",monospace;
