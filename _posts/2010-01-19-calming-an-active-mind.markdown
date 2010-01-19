@@ -1,7 +1,7 @@
 ---
 title: calming an active mind
 layout: post
-published: false
+published: true
 ---
 My mind races a lot. It churns and turns over all the time. When I'm not directly solving interesting problems, I'm inevitably working through them in my head. It's a constant chatter. Sometimes it's something tech related, or it may be something related to economics, politics or other people in my life. I am a problem solver at heart. If I wasn't doing it with computers, I'd be doing it somewhere else.
 
