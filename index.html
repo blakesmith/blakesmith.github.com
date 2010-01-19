@@ -28,10 +28,11 @@ title: dreaming, living, breathing in code.
 <hr style="margin-bottom: 20px;"/>
 <h3><a class="header-underline" href="/blog">stray thoughts</a></h3>
 <ul class="posts">
-  {% for post in site.posts %}
+  {% for post in site.posts limit: 10 %}
     <li><span class="weak">
       {{ post.date | date_to_string }}
       </span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
   {% endfor %}
 </ul>
+<a href="/blog">Older posts</a>
 

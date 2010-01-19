@@ -1,34 +1,19 @@
 ---
 layout: page
-title: stray thoughts
+title: blog post archive
 ---
 
 
 <link rel="stylesheet" href="/stylesheets/blog.css" type="text/css" />
 
 <ul class="blog-posts">
-  {% for post in paginator.posts %}
-    <li>
-        <a href="{{ post.url }}">{{ post.title }}</a><br />
-        <div class="weak blog-date">{{ post.date | date_to_string }}</div> 
-	<div class="blog-body">
-	    {{ post.content | strip_html | truncatewords: 100 }}...
-	</div>
-	<a style="margin-top: 10px;" href="{{ post.url }}">Read more.</a>
-   </li>
-   <hr style="background-color: #BBB;">
+<hr style="margin-bottom: 20px;"/>
+<h3><a class="header-underline" href="/blog">stray thoughts</a></h3>
+<ul class="posts">
+  {% for post in site.posts %}
+    <li><span class="weak">
+      {{ post.date | date_to_string }}
+      </span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
   {% endfor %}
 </ul>
 
-
-<!-- Pagination -->
-{% if paginator.previous_page == 1 %}
-	<a class="semi-weak" href="/blog">&laquo; fresh thoughts</a>
-{% endif %}
-{% if paginator.previous_page > 1 %}
-	<a class="semi-weak" href="/blog/page{{ paginator.previous_page }}">&laquo; fresh thoughts</a>
-{% endif %}
-{% if paginator.next_page <= paginator.total_pages %}
-	<a class="semi-weak" href="/blog/page{{ paginator.next_page }}">stale thoughts &raquo;</a>
-{% endif %}
-<br />
