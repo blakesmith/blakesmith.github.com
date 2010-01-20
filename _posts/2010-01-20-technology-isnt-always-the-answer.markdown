@@ -1,7 +1,7 @@
 ---
 title: technology isn't always the answer
 layout: post
-published: false
+published: true
 ---
 
 Technology is great at solving the problems we don't want to deal with. What used to be the innovation of automated clothes and dish washing has now become the ability to provide us with navigation and physical location at any spot on this earth. We can free our minds to think about other things while we let the technology handle others. But is all this a good thing?
