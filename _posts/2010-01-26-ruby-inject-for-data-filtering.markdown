@@ -15,7 +15,7 @@ My favorite Enumerable so far is inject. I learned from the Ruby docs that injec
 => 55
 {% endhighlight %}
 
-Conceptually, you can view inject as being useful for using a base variable (like an empty array) and adding stuff to that base variable using the logic in the block.
+Conceptually, you can view inject as being useful for using a base variable (like an empty array) and adding/removing stuff to that base variable using the logic in the block. Whatever is returned from the block in each iteration of the loop will be maintained for reference and manipulation.
 
 {% highlight ruby %}
 >> numbers = (1..10).to_a
@@ -29,7 +29,7 @@ Conceptually, you can view inject as being useful for using a base variable (lik
 
 Again, we're building up an array and only including numbers in the array that are even.
 
-One useful thing I've found I can do with inject is to use it to filter down an array of items based on certain criteria. Let's take a look at the example:
+One useful thing I've found I can do with inject is use it to filter down an unprocessed array of items based on certain criteria. Let's take a look at the example:
 
 {% highlight ruby %}
 class Filter
@@ -62,7 +62,7 @@ Let's look at the results of this first in irb, then I'll explain what's going o
 => [1, 3, 5, 7, 9]
 {% endhighlight %}
 
-In our class, @numbers is the array of items we're going to filter down. We start with a full array of all possible numbers, then filter them out by passing each number through all the filters. Each filter is defined by as a lamda function that is stored in the @filters instance variable. The public API goes through the array of @filters and calls each function on the remaining numbers in the set. If we wanted to add another filter, it's as simple as adding another lambda function, and adding it to the @filters array:
+In our class, @numbers is the array of items we're going to filter down. We start with a full array of all possible numbers, then filter them out by passing each number through all the filters. Each filter is defined as a lambda function that is referenced in the @filters instance variable. The public API goes through the array of @filters and calls each function on the remaining numbers in the set. If we wanted to add another filter, it's as simple as adding another lambda function, and adding it to the @filters array:
 
 {% highlight ruby %}
 class Filter
@@ -92,10 +92,12 @@ class Filter
 end
 {% endhighlight %}
 
-All we did was define another filter and add it to the @filters array. There are two things you should be aware of and cautious over when you use this:
+When defining closures, I often like to use lambda notation instead of Proc.new(&block), since lambda functions can call 'return' if they need to (Note that in Ruby, lamdba definitions get converted to procs at runtime anyways). All we did was define another filter and add it to the @filters array. There are two things you should be aware of and cautious over when you use this:
 
-1. Each filter will only filter out the results of what hasn't been filtered out. Because of this:
+1. Each filter is taking it's initial input from the output of the previous filter method. Because of this:
 2. The filtering strategy should not depend on calling the filter methods in any specific order. If someone can switch the order of the @filters array and affect the results, something is probably screwy with your filter logic.
 3. Filters should be written with logic that doesn't depend on the previous filter to do something.
 
-For a more robust example of this in action, take a look at my recent [metra train schedule data library](http://github.com/blakesmith/metra_schedule/blob/master/lib/metra/line.rb) (find the 'trains' method, and the private filters at the bottom).
+For a more robust example of this in action, take a look at my recent [metra train schedule data library](http://github.com/blakesmith/metra_schedule/blob/master/lib/metra/line.rb) (find the 'trains' method, and the private filters at the bottom). I like this filter strategy because it provides a clean and encapsulated way to define modular data filtration. Closures provide a powerful way to manipulate methods as data, and this concept really tickles my fancy.
+
+Cheers!
