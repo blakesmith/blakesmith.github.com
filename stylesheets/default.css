@@ -18,6 +18,7 @@ h3 {
 pre {
 	background-color: #EEE;
 	border: 1px dotted #BBB;
+	overflow: hidden;
 }
 
 a {
