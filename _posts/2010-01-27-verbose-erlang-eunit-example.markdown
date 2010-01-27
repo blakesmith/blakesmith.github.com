@@ -4,7 +4,7 @@ title: verbose erlang eunit example
 published: true
 ---
 
-I'm a big believer in tests that are easy to read and understand quickly. Tests should be simple and straightforward. When I started writing unit tests in Erlang, I found that the EUnit documentation only briefly mentioned titles. I was a bit confused about how all these testing styles fit together and wanted to publish what I eventually figured out for people trying to figure out EUnit for the first time. In this example, I also seperated the test modules from the implementation modules.
+I'm a big believer in tests that are easy to read and understand quickly. Tests should be simple and straightforward. When I started writing unit tests in Erlang, I found that the EUnit documentation only briefly mentioned titles. I was a bit confused about how all these testing styles fit together and wanted to publish what I eventually figured out for people trying to figure out EUnit for the first time. In this example I also seperated the test modules from the implementation modules.
 
 ./tests/input_parser_tests.erl
 {% highlight erlang %}
