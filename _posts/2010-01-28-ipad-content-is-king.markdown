@@ -1,0 +1,14 @@
+---
+layout: post
+title: "iPad: content is king"
+published: true
+---
+With yesterday's announcement of the Apple iPad, many people voiced their underwhelming disappointment with the new device. It's basically a giant iPod touch they say. At it's most primitive level, this is true - but what you have to see is the hidden kinetic energy of the device. What's beneath the surface, what's waiting to be unleashed?
+
+Apple designs their products with a minimalistic attitude. The iPad is a multi-touch piece of glass, and that's it. What you're buying isn't what the device comes with right out of the box. You're buying a blank canvas. You're buying something that's just waiting to be filled up. With a touch-screen that's large and an interface that gets out of your way, Apple should be making a bolder statement that content is king. It's up to the music and book publishers, magazine and newspaper producers, and application developers to bring us along. This is when people will start to feel that their needs are being met. That they HAVE to have this new device - a MacBook Pro and an iPhone together don't cut it anymore.
+
+The downfall of yesterday's demo didn't stem from the device itself. The downfall was its position. Apple would have been a lot better off if they had given more developers more time with the iPad SDK ahead of time, and spent most of the presentation showing off some of the cool things _that the iPad was already doing_. They needed to make us imagine the potential, to see more apps. Steve kept saying, "Isn't this amazing?" throughout the entire presentation, but the audience saw nothing shockingly new. And then there's the issue of books. They have 5 of the major publishers, but have they bothered with integrated magazines and newspapers? Why can't iBooks showcase these publications as well? Why can't iBooks cover the entire plethora of printed material?
+
+We needed to see all the hidden potential. This device has to fill a need. They said it themselves, it has to be a better way to access your content. I really was only impressed by the book application and maybe the browsing (I can live without flash, I hate flash anyways). Did I see a compelling new way to experience _my content_? No. Do I believe that the device has the potential to experience my content in delightfully unique and interesting ways? You better believe it.
+
+This is only the beginning of the iPad. There will be a tipping point for this device, where enough content producers are on the bandwagon that _not having an iPad will make you miss out_. The iPad is a blank canvas, just waiting to be painted. Will I buy one? Not right away - the ecosystem just won't have enough to entice me over. I want content, and I want to be able to experience it in truly unique and new ways that my iPhone can't already do.
