@@ -17,4 +17,6 @@ So when you run 'ssh-keygen' - it produces both a private (id_rsa) and a public 
 
 ![Public Private Key on many computers](/images/public_private_many.png)
 
-Yes, this is an oversimplified analogy - but this is the concept that really helped me to understand how the whole system works at a very high level.
+Now, if you want to take it one step further - ssh-keygen allows you to _put a password on the private key_. What does this mean? In our analogy, this would be the equivalent of putting the private key in a combo-lock safe. In order to use the private key, you must first retrieve it out of the safe with the right combination. From there you can use the private key to unlock the public key just as before. This adds one more layer of protection. Even if your private key _does_ fall into the wrong hands, the person must still know the password to use the private key. If this happens I would recommend generating a new public/private key pair immediately.
+
+Yes, this is an oversimplified analogy - but this concept really helped me understand how the whole system works at a very high level.
