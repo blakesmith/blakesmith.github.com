@@ -52,6 +52,7 @@ a {
 
 #menu ul {
 	list-style-type: none;
+	width: 127px;
 }
 
 #menu li {
