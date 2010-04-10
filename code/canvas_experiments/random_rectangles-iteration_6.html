@@ -1,0 +1,124 @@
+
+<!-- saved from url=(0069)file:///home/blake/projects/canvas_experiments/random_rectangles.html -->
+<HTML><HEAD><META http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+    <TITLE>random rectangles - html5 canvas experiment</TITLE>
+    <SCRIPT type="text/javascript">
+      var CANVAS = {width: 800, height: 600};
+      var NUMBER_OF_RECTANGLES = 150;
+      var FALLING = true;
+
+      function init(){
+        setInterval(draw, 30);
+        setInterval(cleanupStaleResources, 1000);
+      }
+
+      function draw() {
+        var canvas = document.getElementById('myCanvas');
+
+        if (canvas.getContext) {
+          var ctx = canvas.getContext('2d');
+          ctx.clearRect(0, 0, CANVAS.width, CANVAS.height);
+          for (i=0; i < allShapes.length; ++i) {
+            allShapes[i].draw(ctx);
+          } 
+        }
+      }
+
+      function cleanupStaleResources() {
+        for (i=0; i < staleResources.length; ++i) {
+          for (j=0; j < allShapes.length; ++j) {
+            if (staleResources[i] == allShapes[j]) {
+              allShapes.splice(j, 1);
+            }
+          }
+        }
+        staleResources = [];
+      }
+
+
+      /* Rectangle object */
+      var RotatingRectangle = function(opts){
+        var rotationState = 0;
+        var active = true;
+
+        if (opts.falling) {
+          var fallingSpeed = Math.ceil(Math.random() * 5);
+          opts.y = -opts.height
+        }
+    
+
+        this.draw = function(ctx){
+
+          if (!active)
+            return;
+
+          if (opts.direction)
+            rotationState += opts.rotationSpeed;
+          else 
+            rotationState -= opts.rotationSpeed;
+          
+          if (opts.falling)
+            opts.y += fallingSpeed;
+
+          ctx.save();
+          ctx.translate(opts.x+(opts.width/2), opts.y+(opts.height/2));
+          ctx.rotate(rotationState);
+          ctx.fillStyle = opts.fillColor;
+          ctx.fillRect(0-(opts.width/2), 0-(opts.height/2), opts.width, opts.height);
+          ctx.restore();
+
+          if (opts.y > CANVAS.height) {
+            active = false;
+            staleResources.push(this);
+            allShapes.push(createRectangle());
+          }
+
+        }
+      }
+
+      function generateShapes(count){
+        var allShapes = [];
+        for (i=0; i < count; ++i) {
+          allShapes.push(createRectangle()); 
+        }
+        return allShapes;
+      }
+
+      function createRectangle(){
+        var red = Math.floor(Math.random() * 256);
+        var green = Math.floor(Math.random() * 256);
+        var blue = Math.floor(Math.random() * 256);
+        var opacity = Math.random();
+        var direction = Math.round(Math.random()) == 0 ? false : true
+        return new RotatingRectangle({
+          x: Math.floor(Math.random() * CANVAS.width), 
+          y: Math.floor(Math.random() * CANVAS.height), 
+          width: 50, 
+          height: 50, 
+          falling: FALLING,
+          rotationSpeed: Math.random()*.10,
+          fillColor: "rgba("+red+", "+green+", "+blue+", "+opacity+")", 
+          direction: direction
+        });
+      }
+
+      var allShapes = generateShapes(NUMBER_OF_RECTANGLES);
+      var staleResources = [];
+
+      init();
+    </SCRIPT>
+    <STYLE type="text/css">
+      #canvasContainer {
+        border: 1px solid black;
+	margin: 0 auto;
+	width: 800px;
+	height: 600px;
+      }
+    </STYLE>
+  </HEAD><BODY>
+    <DIV id="canvasContainer">
+      <CANVAS id="myCanvas" width="800" height="600">
+    </CANVAS></DIV>
+  
+
+</BODY></HTML>

@@ -1,0 +1,35 @@
+
+<!-- saved from url=(0060)file:///home/blake/projects/canvas_experiments/two_rect.html -->
+<HTML><HEAD><META http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+    <TITLE>Canvas template</TITLE>
+    <SCRIPT type="text/javascript">
+      setInterval(draw, 30);
+      var degrees = 0.0;
+      function draw() {
+        var canvas = document.getElementById('tutorial');
+
+        if (canvas.getContext) {
+          var ctx = canvas.getContext('2d');
+          ctx.clearRect(0,0,150,150);
+          degrees += 0.016;
+
+          ctx.save();
+          ctx.translate(75, 75);
+          ctx.rotate(degrees);
+          ctx.fillStyle = "rgb(200, 0, 0)";
+          ctx.fillRect(-25, -25, 50, 50);
+          ctx.restore();
+
+        }
+      }
+    </SCRIPT>
+    <STYLE type="text/css">
+      canvas {
+        border: 1px solid black;
+      }
+    </STYLE>
+  </HEAD><BODY onload="draw();">
+    <CANVAS id="tutorial" width="150" height="150">
+  
+
+</CANVAS></BODY></HTML>
