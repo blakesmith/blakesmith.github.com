@@ -7,7 +7,7 @@ title: git push to publish with jekyll
 This blog uses a push to publish model with
 [Jekyll](http://github.com/mojombo/jekyll) and Github Pages. You can see
 a write-up of this process [right
-here](github.com/blakesmith/blakesmith.github.com/blob/master/README.markdown).
+here](http://github.com/blakesmith/blakesmith.github.com/blob/master/README.markdown).
 
 I wanted to implement a similar sort of feature with another Jekyll
 powered site I'm working on without having to use Github pages. Luckily
