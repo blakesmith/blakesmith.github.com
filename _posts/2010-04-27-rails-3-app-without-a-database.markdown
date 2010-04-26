@@ -1,7 +1,7 @@
 ---
 layout: post
 title: rails 3 app without a database
-published: false
+published: true
 ---
 
 In Rails 2, you used to be able to make Rails 3 work without a database
