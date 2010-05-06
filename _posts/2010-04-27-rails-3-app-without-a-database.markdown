@@ -4,8 +4,8 @@ title: rails 3 app without a database
 published: true
 ---
 
-In Rails 2, you used to be able to it run without a database by adding
-the following line to your config/environment.rb file:
+In Rails 2, you used to be able to run an application without a database
+by adding the following line to your config/environment.rb file:
 
 {% highlight ruby %}
 config.frameworks -= [ :active_record ]
