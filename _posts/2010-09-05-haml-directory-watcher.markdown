@@ -8,7 +8,7 @@ My friend [Ethan Gunderson](http://ethangunderson.com/index.html) wrote
 [an article](http://www.scribd.com/doc/33776550/Rails-Magazine-Issue6)
 on the beauty of [HAML](http://haml-lang.com/) as a substitute for ERB
 or just plain HTML markup. He's been singing its praises for a long time
-now, but I've just been too stuborn to listen to his good advice. At
+now, but I've just been too stubborn to listen to his good advice. At
 first glance, HAML looks like a strange sort of dialect, and indeed it
 does take a bit to get used to if you've been doing ERB or using any
 other kind of traditional templating markup for awhile.
