@@ -30,10 +30,10 @@ buildings that only exist through the expression of an idea. You're hammering
 ideas into logical structure, rather than hammering a nail into a 2 by 4. 
 
 It's not easy to spend all day inside your head. Your mind is often a much
-scarier place than you ever really imagined. We're a mess of emotions and
+scarier place than you ever really imagined. It's a mess of emotions and
 stresses and relationships and conflict and loss and pain and fear. We're not
 creatures who can exist purely on logic, and yet so often that is the type of
-thinking that programming rewards.
+thinking that computer programming rewards.
 
 In spite of this, I have come to realize that the software developers I look up
 to the most are the ones who are able to get outside of their heads. They are
@@ -44,13 +44,13 @@ building great software, and that means not just the code that's on the screen.
 
 Last weekend, my wife and I were just waking up on a Sunday and the first thing
 I started telling her was about some new software project that I had been
-thinking about recently. I think she knew I had been thinking about it a lot
-because I started to talk really fast and my eyes started to get really big and
-I started to twirl my hair while I was telling her about it. She was groggy,
-just waking up, but the way she looked at me made it clear that she was still
-listening. When I got done telling her about this idea, she just smiled, patted
-me on the head and said, "Oh honey, don't you ever just want to give your mind a
-break? I think it needs to rest sometimes."
+thinking about. I think she knew I had been thinking about it a lot because I
+started to talk really fast and my eyes started to get really big and I was
+twirling my hair while I told her about it. She was groggy, just waking up, but
+the way she looked at me made it clear that she was still listening.  When I
+got done telling her about this idea, she just smiled, patted me on the head
+and said, "Oh honey, don't you ever just want to give your mind a break? I
+think it needs to rest sometimes."
 
 My wife is amazing at listening to my crazy new ideas and being really
 encouraging, but she had a really good point. When do I ever really get to slow
