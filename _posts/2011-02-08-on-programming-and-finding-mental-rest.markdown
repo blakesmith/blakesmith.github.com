@@ -74,5 +74,5 @@ grade. Whatever your physical outlet is, I encourage you to be intentional about
 pursuing it. Your success as a programmer means having a clear head that is
 given ample rest. Creativity and pleasure can only flow from a person who is
 well balanced and knows when it's time to hit the mental accelerator, and when
-it's time to hit the breaks.
+it's time to hit the brakes.
 
