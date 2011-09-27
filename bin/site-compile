@@ -1,0 +1,31 @@
+#!/bin/bash
+
+ROOT=/home/blake/public_html/blakesmith
+GITSOURCE=/home/blake/pubgit/blakesmith.github.com.git
+
+SOURCE=$ROOT/source
+PUBLIC=$ROOT/public
+if [ ! -d $SOURCE ]; then        echo "Creating archive"
+        git clone $GITSOURCE $SOURCE
+else
+        echo "Fetching updates"
+        cd $SOURCE
+        git pull origin master
+fi
+if [ ! -d $PUBLIC ]; then
+        echo "Creating public directory"
+        mkdir -p $PUBLIC
+fi
+echo "Compiling source"
+source ~/.rvm/scripts/rvm
+rvm 1.8.7
+jekyll $SOURCE $PUBLIC
+if [ $? -eq 0 ]; then
+        rm -rf $PUBLIC/scans
+        rm $PUBLIC/Capfile
+        echo "Successfully deployed"
+else
+        echo "Failed to deploy"
+fi
+rvm system
+
